@@ -1,10 +1,10 @@
 /*
  * @Author: love-yuri yuri2078170658@gmail.com
  * @Date: 2024-06-21 20:02:45
- * @LastEditTime: 2024-06-21 21:35:22
+ * @LastEditTime: 2024-06-22 17:45:55
  * @Description: test
  */
-import 'package:first/pages/home.dart';
+import 'package:first/componets/route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -30,9 +30,11 @@ class App extends StatelessWidget {
       minTextAdapt: true,
       splitScreenMode: true,
       builder: (context, child) {
-        return const MaterialApp(
+        return const MaterialApp (
           debugShowCheckedModeBanner: false,
-          home: HomePage(),
+          onGenerateRoute: RouteManager.generateRoute,
+          initialRoute: RouteManager.home,
+          // home: HomePage(),
         );
       },
     );
