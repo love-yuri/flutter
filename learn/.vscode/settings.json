@@ -118,4 +118,5 @@
     "Codegeex.CompletionModel": "CodeGeeX Pro[Beta]",
     "Codegeex.GenerationPreference": "line by line",
     "Codegeex.CommitMessageStyle": "ConventionalCommits",
+    "files.eol": "\n",
 }
